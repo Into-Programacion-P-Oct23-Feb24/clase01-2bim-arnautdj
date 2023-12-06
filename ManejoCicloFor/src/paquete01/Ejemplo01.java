@@ -15,14 +15,23 @@ public class Ejemplo01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        String cadenaFinal = "";
 
         for (int i = 1; i <= 10; i++) {
-            System.out.printf("%d\n", i);
+            cadenaFinal = String.format("%s%d",cadenaFinal, i);
         }
         
         for (int i = 1; i < 11; i++) {
-            System.out.printf("%d\n", i);
+            cadenaFinal = String.format("%s%d",cadenaFinal, i);
         }
+        
+        System.out.printf("%s", cadenaFinal);
+        
+        /*
+        Se usa una cadena acumuladora para unir las iteraciones de 2 ciclos
+        repetitivos for y presentar una sola cadena al final.
+        */
 
     }
 
